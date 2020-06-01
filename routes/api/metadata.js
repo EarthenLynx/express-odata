@@ -1,6 +1,6 @@
 // Import needed modules
 const express = require("express");
-const mGet = require("../../controller/metadata/getMetaData");
+const iGet = require("../../controller/metadata/getProperties");
 
 // Setup the router
 var router = express.Router();
@@ -14,7 +14,7 @@ var router = express.Router();
  */
 // Get the data stream from a given URL
 router.get("/", (req, res, next) => {
-  mGet(req, res, next);
+  iGet(req, res, next);
 });
 
 module.exports = router;
