@@ -1,7 +1,7 @@
 // GET the Odata from the URL
 const axios = require("axios");
 const axios_config = require("../../config/axios.config.js");
-const logger = require("../../middleware/logger");
+const logger = require("../../middleware/logger"); 
 
 /*
  * @desc        Get OData stream headers, config & data based on URL query
@@ -44,6 +44,7 @@ const GET_ODATA = (req, res, next) => {
     axios
       .get(url, axios_config)
       .then((response) => {
+        
         let jsonData = {
           status: response.status,
           headers: response.headers,

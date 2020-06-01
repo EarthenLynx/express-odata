@@ -1,2 +1,9 @@
 {"level":"error","message":"Mon May 25 2020 22:16:21 GMT+0200 (GMT+02:00)Error while posting data: Request failed with status code 400"}
 {"level":"error","message":"Mon May 25 2020 22:16:55 GMT+0200 (GMT+02:00) - Error while posting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 13:23:14 GMT+0200 (GMT+02:00) - Error while getting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 17:04:29 GMT+0200 (GMT+02:00) - Error while getting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 17:05:13 GMT+0200 (GMT+02:00) - Error while getting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 17:06:26 GMT+0200 (GMT+02:00) - Error while getting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 17:07:16 GMT+0200 (GMT+02:00) - Error while getting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 17:23:23 GMT+0200 (GMT+02:00) - Error while deleting data: Request failed with status code 400"}
+{"level":"error","message":"Tue May 26 2020 18:53:24 GMT+0200 (GMT+02:00) - Error while getting data: response is not a function"}
