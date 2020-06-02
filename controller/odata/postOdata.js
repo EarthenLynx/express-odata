@@ -17,10 +17,10 @@ const POST_ODATA = (req, res, next) => {
   let url = req.query.url;
   let type = req.query.type;
 
-  let data = req.body;
-
   // Append the odata type
-  data["odata.type"] = type;
+  let data = JSON.stringify({"odata.type": type , ...req.body});
+
+  console.log(data);
 
   axios
     .post(url, data, axios_config)
@@ -32,9 +32,9 @@ const POST_ODATA = (req, res, next) => {
         data: response.data,
       };
       if (jsonData.status === 201) {
-        res.send(jsonData);
+        res.send(JSON.stringify(jsonData));
       } else {
-        console.error("Something went wrong while fetching data");
+        console.error("Something went wrong while posting data");
       } /* ... Additional error handling ... */
     })
     .catch((err) => {

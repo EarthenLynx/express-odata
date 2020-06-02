@@ -1,6 +1,6 @@
 // Import needed modules
 const express = require("express");
-const iGet = require("../../controller/metadata/getProperties");
+const mGetProperties = require("../../controller/metadata/getProperties");
 
 // Setup the router
 var router = express.Router();
@@ -13,8 +13,8 @@ var router = express.Router();
  * TODO:    ("/query")  : Perform a query against the OData service 
  */
 // Get the data stream from a given URL
-router.get("/", (req, res, next) => {
-  iGet(req, res, next);
+router.get("/props", (req, res, next) => {
+  mGetProperties(req, res, next);
 });
 
 module.exports = router;

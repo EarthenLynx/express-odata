@@ -3,8 +3,7 @@ module.exports = {
     // "Authorization":
     //   "Basic " + +Buffer.from(username + ":" + password).toString("base64"),
     "Accept": "application/json",
-    "Accept-charset": "utf-8",
-    "Content-Type": "application/x-www-form-urlencoded",
+    "Content-Type": "application/json",
   },
   timeout: 20000,
 };

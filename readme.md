@@ -1,36 +1,10 @@
-# Express minimal boilerplate
+# Service to conveniently fetch OData from given service URL
 
-Basically a minimal backbone mongodb - express boilerplate with preconfigured CRUD options. Inspired by the template on MDN.
+## Naming conventions for variables and methods
 
-```sh
-$ git clone https://github.com/EarthenLynx/express-minimal.git
-```
-
-```sh
-$ npm install
-```
-
-```sh
-$ npm run dev
-```
-
-## Routes
-
-### Root: 
-
-> localhost/todo
-
-### get & post
-
-> /
-
-### update
-
-> /update
-
-### delete
-
-> /delete
+> - o => Variable directly related to an OData service
+> - m => Variable directly related to OData - metadata
+> - f => Variable directly related to local filesystem
 
 ### Structure of the server: 
 ```

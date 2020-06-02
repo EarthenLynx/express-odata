@@ -4,36 +4,46 @@ const axios_config = require("../../config/axios.config.js");
 const logger = require("../../middleware/logger");
 
 /*
- * @desc        Get OData stream headers, config & data based on URL query
- *              URL param 'type' is optional, used to get single params from stream
- *              If types are omitted or invalid, the data will be sent by default
- * @route       GET /odata?url=[ODATA_URL]&value=[STRING]
- * @response    200: {status, headers, config, data}
- *              err: {status, msg}
+ * @desc        Delete a OData resource based on a given key in the URL.
+ *              Depending on the service targetted, the response body
+ *              might be empty and therefor return a status code of
+ *              204
+ *
+ * @route       GET /odata?url=[ODATA_URL]&key=[STRING]
+ *
+ * @response    200 / 204:  {status, msg} when deletion has been successful
+ *              err:        {status, msg}
  */
 const DELETE_ODATA = (req, res, next) => {
   // Get the Odata Path from the URL
   let url = req.query.url;
-  let value = req.query.value; 
+  let key = req.query.key;
 
-  let query = url + '(' + value + ')';
+  // Build the OData query to be sent
+  let oQuery = url + "(" + key + ")";
 
   // Check if type has been specified and return only that property
   axios
-    .delete(query, axios_config)
+    .delete(oQuery, axios_config)
     .then((response) => {
-      console.log(response);
-      if (response.status === 200) {
-        res.send(jsonData);
+      if ((response.status === 200) | (response.status === 204)) {
+        res.send({
+          status: "Success",
+          msg: "Successfully deleted resource with key" + key,
+        });
       } else {
-        console.error("Something went wrong while fetching data");
+        let date = new Date();
+        logger.error({
+          level: "Error",
+          message: date + " - Error while deleting data: " + err.message,
+        });
       } /* ... Additional error handling ... */
     })
     .catch((err) => {
       res.send({ status: "Error", msg: err.message });
       let date = new Date();
       logger.error({
-        level: "error",
+        level: "Error",
         message: date + " - Error while deleting data: " + err.message,
       });
     });

@@ -21,17 +21,18 @@ const GET_PROPERTIES = (req, res, next) => {
   axios
     .get(url, axios_config)
     .then((response) => {
-      let metaUrl = response.data["odata.metadata"];
+      let mUrl = response.data["odata.metadata"];
       // After meta url has been fetched, use it to return the metadata
-      axios.get(metaUrl).then((response) => {
-        let propData = JSON.parse(
+      axios.get(mUrl).then((response) => {
+        let mDataJson = JSON.parse(
           convert.xml2json(response.data, {
             compact: true,
           })
         );
         
         // Resolve the name of the cache where data is to be stored
-        let jsonPath = path.resolve(
+        // TODO: Needs to receive a key to be retrieveable
+        let fPath = path.resolve(
           __dirname + "../../../cache/oEntities.json"
         );
 
@@ -41,25 +42,25 @@ const GET_PROPERTIES = (req, res, next) => {
          * Save these in an array
          */
 
-        let pEntities = [];
+        let oEntities = [];
         let namespace =
-          propData["edmx:Edmx"]["edmx:DataServices"]["Schema"]["_attributes"][
+          mDataJson["edmx:Edmx"]["edmx:DataServices"]["Schema"]["_attributes"][
             "Namespace"
           ];
-        let jsonEntities =
-          propData["edmx:Edmx"]["edmx:DataServices"]["Schema"]["EntityType"];
+        let entities =
+          mDataJson["edmx:Edmx"]["edmx:DataServices"]["Schema"]["EntityType"];
 
-        jsonEntities.map((el) => {
-          pEntities.push({
+        entities.map((el) => {
+          oEntities.push({
             name: namespace + "." + el["_attributes"]["Name"],
             props: el["Property"],
           });
         });
 
         // Write the result to a json file and send the object back
-        fs.writeFile(jsonPath, JSON.stringify(pEntities), (err) => {
+        fs.writeFile(fPath, JSON.stringify(oEntities), (err) => {
           if (err) throw err;
-          res.send(JSON.stringify(pEntities));
+          res.send(JSON.stringify(oEntities));
         });
       });
     })

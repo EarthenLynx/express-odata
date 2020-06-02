@@ -7,7 +7,7 @@ const logger = require("./middleware/logger");
 
 // Initialize the routes and the application
 const routerOdata = require("./routes/api/odata");
-const routerMetadata = require("./routes/api/metadata");
+const routerProperties = require("./routes/api/metadata");
 const app = express();
 
 // Initialize the middleware
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Configure the routes
 app.use("/odata", routerOdata);
-app.use("/ometa", routerMetadata)
+app.use("/ometa", routerProperties)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
