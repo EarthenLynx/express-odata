@@ -3,12 +3,13 @@ const logger = require("../../middleware/logger");
 /*
  * @desc        This controller takes care of handling the middleman response
  *              of a successful request and response - relation towards the 
- *              OData server. 
+ *              OData server. If a different http status was returned, the 
+ *              controller will send the reply to the client and log it.
  * @requires    res,        The res - object to send the data to the requesting client
  *              response,   The response object returned by the OData server
  *              status      The desired HTTP Status upon which to send s success - object 
  * @response    200: {status, headers, config, data}
- *              err: {status, msg}
+ *              err: {status, msg, data}
  */
 
 const HANDLE_RESPONSE = (res, response, status) => {
@@ -28,9 +29,10 @@ const HANDLE_RESPONSE = (res, response, status) => {
       message: date + " - Data successfully returned - " + oData.status,
     });
   } else {
+    res.send({ status: "Error", msg: "A different status than expected was returned", data: response });
     logger.error({
       level: "Error",
-      message: date + " - Error while getting data."
+      message: date + " A different status than expected was returned" + response
     });
   }
 };

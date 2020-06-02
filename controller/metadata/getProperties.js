@@ -17,9 +17,9 @@ const path = require("path");
  */
 
 const GET_PROPERTIES = (req, res, next) => {
-  let url = req.query.url;
+  let oUrl = req.query.url;
   axios
-    .get(url, axios_config)
+    .get(oUrl, axios_config)
     .then((response) => {
       let mUrl = response.data["odata.metadata"];
       // After meta url has been fetched, use it to return the metadata

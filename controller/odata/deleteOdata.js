@@ -1,8 +1,8 @@
 // GET the Odata from the URL
 const axios = require("axios");
 const axios_config = require("../../config/axios.config.js");
-const logger = require("../../middleware/logger");
-const handleResponse = require("../helpers/handleResponse");
+const handleResponse = require("../helpers/handleOdataResponse");
+const handleException = require("../helpers/handleOdataException");
 
 /*
  * @desc        Delete a OData resource based on a given oKey in the URL.
@@ -26,16 +26,11 @@ const DELETE_ODATA = (req, res, next) => {
   // Check if type has been specified and return only that property
   axios
     .delete(oQuery, axios_config)
-    .then((response) => {
-      handleResponse(res, response, 204)
+    .then((oResponse) => {
+      handleResponse(res, oResponse, 204);
     })
     .catch((err) => {
-      res.send({ status: "Error", msg: err.message });
-      let date = new Date();
-      logger.error({
-        level: "Error",
-        message: date + " - Error while deleting data: " + err.message,
-      });
+      handleException(res, err);
     });
 };
 
