@@ -2,6 +2,7 @@
 const axios = require("axios");
 const axios_config = require("../../config/axios.config.js");
 const logger = require("../../middleware/logger");
+const handleResponse = require("../helpers/handleResponse");
 
 /*
  * @desc      Post (test) data towards the OData Server
@@ -14,28 +15,16 @@ const logger = require("../../middleware/logger");
  */
 const POST_ODATA = (req, res, next) => {
   // Get the Odata Path from the URL
-  let url = req.query.url;
-  let type = req.query.type;
+  let oUrl = req.query.url;
+  let oType = req.query.type;
 
   // Append the odata type
-  let data = JSON.stringify({"odata.type": type , ...req.body});
-
-  console.log(data);
+  let data = JSON.stringify({ "odata.type": oType, ...req.body });
 
   axios
-    .post(url, data, axios_config)
+    .post(oUrl, data, axios_config)
     .then((response) => {
-      let jsonData = {
-        status: response.status,
-        headers: response.headers,
-        config: response.config,
-        data: response.data,
-      };
-      if (jsonData.status === 201) {
-        res.send(JSON.stringify(jsonData));
-      } else {
-        console.error("Something went wrong while posting data");
-      } /* ... Additional error handling ... */
+      handleResponse(res, response, 201);
     })
     .catch((err) => {
       res.send({ status: "Error", msg: err.message });

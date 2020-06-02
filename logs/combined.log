@@ -388,3 +388,38 @@
 {"level":"info","message":"Started server at Tue Jun 02 2020 21:49:01 GMT+0200 (GMT+02:00) on port 3000"}
 {"level":"error","message":"Tue Jun 02 2020 21:49:06 GMT+0200 (GMT+02:00) - Error while posting data: Request failed with status code 415"}
 {"level":"info","message":"Started server at Tue Jun 02 2020 21:49:47 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:54:38 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:55:09 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:55:51 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:56:18 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:56:46 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:57:00 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:57:26 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:57:49 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 21:59:42 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:09:21 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:11:26 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:11:38 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:12:26 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"error","message":"Tue Jun 02 2020 22:12:31 GMT+0200 (GMT+02:00) - Error while getting data: res is not defined"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:13:20 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"error","message":"Tue Jun 02 2020 22:13:23 GMT+0200 (GMT+02:00) - Error while getting data: err is not defined"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:13:37 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:13:43 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"error","message":"Tue Jun 02 2020 22:13:46 GMT+0200 (GMT+02:00) - Error while getting data: err is not defined"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:14:23 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"error","message":"Tue Jun 02 2020 22:14:30 GMT+0200 (GMT+02:00) - Error while getting data: err is not defined"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:14:55 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:15:39 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:15:47 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Tue Jun 02 2020 22:15:50 GMT+0200 (GMT+02:00) - Data successfully returned -200"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:18:12 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Tue Jun 02 2020 22:19:01 GMT+0200 (GMT+02:00) - Data successfully returned -201"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:20:02 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:23:49 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:26:16 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Tue Jun 02 2020 22:26:26 GMT+0200 (GMT+02:00) - Data successfully returned - 200"}
+{"level":"info","message":"Tue Jun 02 2020 22:27:05 GMT+0200 (GMT+02:00) - Data successfully returned - 201"}
+{"level":"info","message":"Started server at Tue Jun 02 2020 22:28:45 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"error","message":"Tue Jun 02 2020 22:28:51 GMT+0200 (GMT+02:00) - Error while deleting data: Request failed with status code 400"}
+{"level":"info","message":"Tue Jun 02 2020 22:29:24 GMT+0200 (GMT+02:00) - Data successfully returned - 204"}

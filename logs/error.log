@@ -30,3 +30,8 @@
 {"level":"error","message":"Tue Jun 02 2020 21:40:55 GMT+0200 (GMT+02:00) - Error while posting data: Request failed with status code 405"}
 {"level":"error","message":"Tue Jun 02 2020 21:48:50 GMT+0200 (GMT+02:00) - Error while posting data: Request failed with status code 405"}
 {"level":"error","message":"Tue Jun 02 2020 21:49:06 GMT+0200 (GMT+02:00) - Error while posting data: Request failed with status code 415"}
+{"level":"error","message":"Tue Jun 02 2020 22:12:31 GMT+0200 (GMT+02:00) - Error while getting data: res is not defined"}
+{"level":"error","message":"Tue Jun 02 2020 22:13:23 GMT+0200 (GMT+02:00) - Error while getting data: err is not defined"}
+{"level":"error","message":"Tue Jun 02 2020 22:13:46 GMT+0200 (GMT+02:00) - Error while getting data: err is not defined"}
+{"level":"error","message":"Tue Jun 02 2020 22:14:30 GMT+0200 (GMT+02:00) - Error while getting data: err is not defined"}
+{"level":"error","message":"Tue Jun 02 2020 22:28:51 GMT+0200 (GMT+02:00) - Error while deleting data: Request failed with status code 400"}
