@@ -8,7 +8,12 @@ const handleException = require("../helpers/handleOdataException");
  * @desc        Get OData stream headers, config & data based on URL query
  *              URL param 'section' is optional, used to get single params from stream
  *              If types are omitted or invalid, just the data values will be sent
- * @route       GET /odata?url=[ODATA_URL]&section=[TYPE]
+ * 
+ * @route       GET /odata?url=[ODATA_URL]&section=[SECTION]
+ * 
+ * @requires    1. REQUIRED | url=[ODATA_URL]:  | The URL of the OData service.
+ *              2. OPTIONAL | section=[SECTION] | The specific part of OData information to be returned.
+ * 
  * @response    200: {status, headers, config, data}
  *              err: {status, msg}
  */

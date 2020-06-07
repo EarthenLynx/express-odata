@@ -8,10 +8,13 @@ const handleException = require("../helpers/handleOdataException");
  * @desc        Delete a OData resource based on a given oKey in the URL.
  *              Depending on the service targetted, the response body
  *              might be empty and therefor return a status code of
- *              204
+ *              204. Therefor
  *
- * @route       GET /odata?url=[ODATA_URL]&oKey=[STRING]
+ * @route       GET /odata?url=[ODATA_URL]&oKey=[OKEY]
  *
+ * @requires    1. REQUIRED | url=[ODATA_URL]:  | The URL of the OData service 
+ *              2. REQUIRED | oKey=[OKEY]       | The Key of the OData entity to be deleted, e.g. a unique ID or name.
+ * 
  * @response    200 / 204:  {status, msg} when deletion has been successful
  *              err:        {status, msg}
  */
