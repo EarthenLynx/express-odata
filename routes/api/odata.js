@@ -2,6 +2,7 @@
 const express = require("express");
 const oGet = require("../../controller/odata/getOdata");
 const oPost = require("../../controller/odata/postOdata");
+const oUpdate = require("../../controller/odata/updateOdata");
 const oDelete = require("../../controller/odata/deleteOdata");
 
 // Setup the router
@@ -23,6 +24,11 @@ router.get("/", (req, res, next) => {
 router.post("/", (req, res, next) => {
   oPost(req, res, next);
 });
+
+// Update data from the serivice URL
+router.put("/", (req, res, next) => {
+  oUpdate(req, res, next);
+})
 
 // Delete data from the service URL
 router.delete("/", (req, res, next) => {

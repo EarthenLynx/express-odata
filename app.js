@@ -43,7 +43,7 @@ app.use(function (err, req, res, next) {
   // send a basic error msg
   res.send({
     statusText: 'error', 
-    msg: "An error has occured."
+    msg: "An error has occured. " + err.message
   });
 });
 

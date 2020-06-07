@@ -13,20 +13,24 @@ const handleException = require("../helpers/handleOdataException");
  * @route       GET /odata?url=[ODATA_URL]&oKey=[OKEY]
  *
  * @requires    1. REQUIRED | url=[ODATA_URL]:  | The URL of the OData service 
- *              2. REQUIRED | oKey=[OKEY]       | The Key of the OData entity to be deleted, e.g. a unique ID or name.
+ *              2. REQUIRED | key=[OKEY]       | The Key of the OData entity to be deleted, e.g. a unique ID or name.
  * 
  * @response    200 / 204:  {status, msg} when deletion has been successful
  *              err:        {status, msg}
+ * 
+ * @issues
+ * //FIXME:    Newly created entities ( from the server ) cannot be deleted and throw a 400 bad request error
+ *             ( only for the first API key, for the 2nd this did not occur ), could be an issue with integrity
  */
 const DELETE_ODATA = (req, res, next) => {
   // Get the Odata Path from the URL
   let oUrl = req.query.url;
   let oKey = req.query.key;
 
-  // Build the OData query to be sent
+  // Build the OData URL - query to be sent
   let oQuery = oUrl + "(" + oKey + ")";
 
-  // Check if type has been specified and return only that property
+  // Send the delete request and pass the response to the helper function
   axios
     .delete(oQuery, axios_config)
     .then((oResponse) => {

@@ -1,3 +1,9 @@
+/* FIXME: Old, possibly reuseable code. 
+ *
+ * This file uses the formidable module ( to be installed ) in order to temporarily cache an image in 
+ * a pre-configured path ( tbd in const galleryPath ). Could later be used for file handling and
+ * receiving / sending back and forth binary data streams
+*/
 const path = require("path");
 const fs = require("fs");
 const formidable = require("formidable");
