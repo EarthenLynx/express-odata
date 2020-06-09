@@ -20,23 +20,28 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Uncomment these to set the CORS headers
 app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
   next();
 });
 
 // Configure the routes
 app.use("/odata", routerOdata);
-app.use("/ometa", routerProperties)
+app.use("/ometa", routerProperties);
 
 // Configure the admin routes
 app.use("/admin/logs", routerAdminLogs);
 app.use("/admin/routes", routerAdminRoutes);
 
-
-routerAdminLogs
+routerAdminLogs;
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
@@ -50,8 +55,16 @@ app.use(function (err, req, res, next) {
 
   // send a basic error msg
   res.send({
-    statusText: 'error', 
-    msg: "An error has occured. " + err.message
+    statusText: "error",
+    time: new Date(),
+    msg: "An error has occured. " + err.message,
+  });
+
+  logger.error({
+    level: "error",
+    time: new Date(),
+    message:
+      "An unexpected error has occured. It is likely related to a misconfiguration in the entrypoint - file. ",
   });
 });
 
@@ -62,9 +75,7 @@ app.set("port", process.env.PORT || 3000);
 app.listen(app.get("port"), () =>
   logger.info({
     level: "info",
-    message: "Started server at "
-      .concat(new Date())
-      .concat(" on port ")
-      .concat(app.get("port")),
+    time: new Date(),
+    message: "Started server on port " + app.get("port"),
   })
 );

@@ -29,13 +29,15 @@ const HANDLE_RESPONSE = (res, response, status) => {
     res.send(oData);
     logger.info({
       level: "Info",
-      message: date + " - Data successfully returned - " + oData.status,
+      time: date, 
+      message: "Data successfully returned - " + oData.status,
     });
   } else {
     res.send({ status: "Error", msg: "A different status than expected was returned", data: response });
     logger.error({
       level: "Error",
-      message: date + " A different status than expected was returned" + response
+      time: date, 
+      message: "A different status than expected was returned" + response
     });
   }
 };

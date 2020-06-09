@@ -19,7 +19,8 @@ const HANDLE_EXCEPTION = (res, err) => {
   res.send({ status: "Error", msg: err.message });
   logger.error({
     level: "error",
-    message: date + " - Error while updating data. It's possible a different status has been returned than expected. | " + err.message,
+    time: date, 
+    message: "Error while updating data. It's possible a different status has been returned than expected. | " + err.message,
   });
 };
 
