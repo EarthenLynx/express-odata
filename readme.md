@@ -16,6 +16,7 @@ The server directory structure is an abbreviation to the modularized concept pre
 
 ## Naming conventions for variables and methods
 
+> - a => Variable directly related to an admin config file
 > - o => Variable directly related to an OData service
 > - m => Variable directly related to OData - metadata
 > - f => Variable directly related to local filesystem

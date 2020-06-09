@@ -121,3 +121,13 @@
 {"level":"info","message":"Started server at Sun Jun 07 2020 14:13:51 GMT+0200 (GMT+02:00) on port 3000"}
 {"level":"info","message":"Started server at Sun Jun 07 2020 14:14:03 GMT+0200 (GMT+02:00) on port 3000"}
 {"level":"info","message":"Started server at Sun Jun 07 2020 14:15:27 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:09:54 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:10:03 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:10:29 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:12:52 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:13:03 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:13:50 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:14:25 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:14:40 GMT+0200 (GMT+02:00) on port 3000"}
+{"level":"error","message":"Tue Jun 09 2020 18:15:26 GMT+0200 (GMT+02:00) - Error while updating data. It's possible a different status has been returned than expected. | connect ECONNREFUSED 127.0.0.1:80"}
+{"level":"info","message":"Started server at Tue Jun 09 2020 18:18:17 GMT+0200 (GMT+02:00) on port 3000"}

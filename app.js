@@ -8,6 +8,8 @@ const logger = require("./middleware/logger");
 // Initialize the routes and the application
 const routerOdata = require("./routes/api/odata");
 const routerProperties = require("./routes/api/metadata");
+const routerAdminLogs = require("./routes/api/admin/logs");
+const routerAdminRoutes = require("./routes/api/admin/routes");
 const app = express();
 
 // Initialize the middleware
@@ -17,18 +19,24 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Uncomment these to set the CORS headers
-// app.use(function (req, res, next) {
-//   res.setHeader('Access-Control-Allow-Origin', '*');
-//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-//   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-//   res.setHeader('Access-Control-Allow-Credentials', true);
-//   next();
-// });
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  next();
+});
 
 // Configure the routes
 app.use("/odata", routerOdata);
 app.use("/ometa", routerProperties)
 
+// Configure the admin routes
+app.use("/admin/logs", routerAdminLogs);
+app.use("/admin/routes", routerAdminRoutes);
+
+
+routerAdminLogs
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
