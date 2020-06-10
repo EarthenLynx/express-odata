@@ -1,15 +1,11 @@
-{"level":"info","time":"2020-06-09T19:22:09.034Z","message":"Started server at on port 3000"}
-{"level":"info","time":"2020-06-09T19:22:52.498Z","message":"Started server at on port 3000"}
-{"level":"info","time":"2020-06-09T19:24:15.332Z","message":"Started server at on port 3000"}
-{"level":"info","time":"2020-06-09T19:24:27.901Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:24:39.483Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:24:45.309Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:25:06.120Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:25:18.630Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:26:07.415Z","message":"Started server on port 3000"}
-{"level":"error","time":"2020-06-09T19:26:12.925Z","message":"An unexpected error has occured. It is likely related to a misconfiguration in the entrypoint - file. "}
-{"level":"error","time":"2020-06-09T19:29:26.809Z","message":"An unexpected error has occured. It is likely related to a misconfiguration in the entrypoint - file. "}
-{"level":"info","time":"2020-06-09T19:29:38.854Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:30:02.597Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:31:04.545Z","message":"Started server on port 3000"}
-{"level":"info","time":"2020-06-09T19:31:31.445Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T07:53:27.454Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T07:55:16.773Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T07:55:29.498Z","message":"Data successfully returned - 200"}
+{"level":"info","time":"2020-06-10T09:00:29.766Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T10:44:21.023Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T10:45:04.334Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T13:18:32.961Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T13:20:05.855Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T17:16:11.616Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T18:27:20.740Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-10T18:27:39.228Z","message":"Started server on port 3000"}

@@ -11,7 +11,7 @@ function GET_ERR_LOG(req, res, next) {
     let rawLog = Buffer.from(data, "hex").toString("utf8").split("\n");
     rawLog.forEach((el) => {
       if (el.length > 0) {
-        errLog.push(JSON.parse(el.replace("\r", "")));
+        errLog.shift(JSON.parse(el.replace("\r", "")));
       }
     });
     
