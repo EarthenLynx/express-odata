@@ -88,3 +88,36 @@
 {"level":"info","time":"2020-06-15T11:54:09.485Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-15T11:55:11.099Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-15T11:55:15.143Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T11:55:43.186Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T11:58:15.082Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:18:57.451Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:19:16.792Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:19:20.163Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:21:40.766Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:21:43.948Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:21:58.575Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:22:04.611Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:28:14.258Z","message":"A generic error hass occured: Cannot read property 'then' of undefined"}
+{"level":"info","time":"2020-06-15T12:28:15.256Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:29:16.253Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:29:43.040Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:29:54.629Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:30:01.984Z","message":"A generic error hass occured: routes_db.write is not a function"}
+{"level":"info","time":"2020-06-15T12:30:57.664Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:31:04.581Z","message":"A generic error hass occured: routes_db.get is not a function"}
+{"level":"info","time":"2020-06-15T12:31:13.473Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:31:31.438Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:31:50.791Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:32:30.313Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:32:33.735Z","message":"A generic error hass occured: routes is not defined"}
+{"level":"info","time":"2020-06-15T12:32:38.312Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:32:41.932Z","message":"A generic error hass occured: routes_db.get(...).read is not a function"}
+{"level":"info","time":"2020-06-15T12:33:33.546Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:33:36.235Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:34:39.202Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-15T12:34:40.364Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:34:48.137Z","message":"A generic error hass occured: routes_db.get is not a function"}
+{"level":"info","time":"2020-06-15T12:36:09.082Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:36:15.930Z","message":"A generic error hass occured: routes_db.write is not a function"}
+{"level":"info","time":"2020-06-15T12:36:53.875Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-15T12:37:00.609Z","message":"A generic error hass occured: routes_db.write is not a function"}

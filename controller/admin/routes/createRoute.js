@@ -2,7 +2,6 @@ const logger = require("../../../middleware/logger");
 
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
-const { response } = require("express");
 
 const adapter = new FileSync("routes_db.json");
 const routes_db = low(adapter);

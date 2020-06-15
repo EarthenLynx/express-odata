@@ -35,24 +35,6 @@
       "guest": "false",
       "active": "true",
       "value": "{\"msg\": \"No OData sample request available\"}"
-    },
-    {
-      "id": "7511032c-0452-7245-1c04-90b6743bb045",
-      "name": "qwfdhnqlkjwe",
-      "url": "qljewkfqwjkfn",
-      "type": "json",
-      "oDataType": "wefnvwkjevf",
-      "typeOptions[0][text]": "JSON",
-      "typeOptions[0][value]": "json",
-      "typeOptions[0][icon]": "sap-icon://syntax",
-      "typeOptions[1][text]": "XML",
-      "typeOptions[1][value]": "xml",
-      "typeOptions[1][icon]": "sap-icon://source-code",
-      "desc": "None here",
-      "sap": "true",
-      "guest": "false",
-      "active": "true",
-      "value": "{\"msg\": \"No OData sample request available\"}"
     }
   ]
 }
