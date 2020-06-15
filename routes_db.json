@@ -1,0 +1,40 @@
+{
+  "routes": [
+    {
+      "id": "752783d3-77f6-58b9-895c-5211fd97096f",
+      "name": "OData People Service",
+      "url": "https://services.odata.org/v4/TripPinServiceRW/People",
+      "type": "json",
+      "oDataType": "Microsoft.OData.SampleService.Models.TripPin.Person",
+      "typeOptions[0][text]": "JSON",
+      "typeOptions[0][value]": "json",
+      "typeOptions[0][icon]": "sap-icon://syntax",
+      "typeOptions[1][text]": "XML",
+      "typeOptions[1][value]": "xml",
+      "typeOptions[1][icon]": "sap-icon://source-code",
+      "desc": "This is a standard service from OData.org and meant for training purposes.",
+      "sap": "false",
+      "guest": "false",
+      "active": "true",
+      "value": "{\"@odata.context\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/$metadata#People\",\"@odata.nextLink\":\"https://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People?%24skiptoken=8\",\"value\":[{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('russellwhyte')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('russellwhyte')\",\"UserName\":\"russellwhyte\",\"FirstName\":\"Russell\",\"LastName\":\"Whyte\",\"Emails\":[\"Russell@example.com\",\"Russell@contoso.com\"],\"AddressInfo\":[{\"Address\":\"187 Suffolk Ln.\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Boise\",\"Region\":\"ID\"}}],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('scottketchum')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('scottketchum')\",\"UserName\":\"scottketchum\",\"FirstName\":\"Scott\",\"LastName\":\"Ketchum\",\"Emails\":[\"Scott@example.com\"],\"AddressInfo\":[{\"Address\":\"2817 Milton Dr.\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Albuquerque\",\"Region\":\"NM\"}}],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('ronaldmundy')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('ronaldmundy')\",\"UserName\":\"ronaldmundy\",\"FirstName\":\"Ronald\",\"LastName\":\"Mundy\",\"Emails\":[\"Ronald@example.com\",\"Ronald@contoso.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('javieralfred')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('javieralfred')\",\"UserName\":\"javieralfred\",\"FirstName\":\"Javier\",\"LastName\":\"Alfred\",\"Emails\":[\"Javier@example.com\",\"Javier@contoso.com\"],\"AddressInfo\":[{\"Address\":\"89 Jefferson Way Suite 2\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Portland\",\"Region\":\"WA\"}}],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('willieashmore')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('willieashmore')\",\"UserName\":\"willieashmore\",\"FirstName\":\"Willie\",\"LastName\":\"Ashmore\",\"Emails\":[\"Willie@example.com\",\"Willie@contoso.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('vincentcalabrese')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('vincentcalabrese')\",\"UserName\":\"vincentcalabrese\",\"FirstName\":\"Vincent\",\"LastName\":\"Calabrese\",\"Emails\":[\"Vincent@example.com\",\"Vincent@contoso.com\"],\"AddressInfo\":[{\"Address\":\"55 Grizzly Peak Rd.\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Butte\",\"Region\":\"MT\"}}],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('clydeguess')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('clydeguess')\",\"UserName\":\"clydeguess\",\"FirstName\":\"Clyde\",\"LastName\":\"Guess\",\"Emails\":[\"Clyde@example.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637278103705470000},{\"@odata.id\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('keithpinckney')\",\"@odata.etag\":\"W/\\\"08D8110F127FC404\\\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(1l41zsxpohocqcysie0mvdvv))/TripPinServiceRW/People('keithpinckney')\",\"UserName\":\"keithpinckney\",\"FirstName\":\"Keith\",\"LastName\":\"Pinckney\",\"Emails\":[\"Keith@example.com\",\"Keith@contoso.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637278103705470000}]}"
+    },
+    {
+      "id": "06419710-7c4d-8318-5486-783cce1461e0",
+      "name": "OData Airport Service",
+      "url": "https://services.odata.org/V4/TripPinServiceRW/Airports",
+      "type": "json",
+      "oDataType": "Microsoft.OData.SampleService.Models.TripPin.Airport",
+      "typeOptions[0][text]": "JSON",
+      "typeOptions[0][value]": "json",
+      "typeOptions[0][icon]": "sap-icon://syntax",
+      "typeOptions[1][text]": "XML",
+      "typeOptions[1][value]": "xml",
+      "typeOptions[1][icon]": "sap-icon://source-code",
+      "desc": "This is a test service by services.odata",
+      "sap": "false",
+      "guest": "true",
+      "active": "true",
+      "value": "{\"msg\": \"No OData sample request available\"}"
+    }
+  ]
+}
