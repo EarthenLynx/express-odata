@@ -9,11 +9,13 @@ function GET_ERR_LOG(req, res, next) {
     let errLog = []; 
 
     let rawLog = Buffer.from(data, "hex").toString("utf8").split("\n");
-    rawLog.forEach((el) => {
-      if (el.length > 0) {
-        errLog.unshift(JSON.parse(el.replace("\r", "")));
-      }
-    });
+    if(rawLog) {
+      rawLog.forEach((el) => {
+        if (el.length > 0) {
+          errLog.unshift(JSON.parse(el.replace("\r", "")));
+        }
+      });
+    }
     
     res.send(errLog)
   });

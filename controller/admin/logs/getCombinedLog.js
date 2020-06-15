@@ -6,16 +6,17 @@ function GET_COM_LOG(req, res, next) {
 
   fs.readFile(path.join(logPath, "/combined.log"), (err, data) => {
     if (err) throw err;
-    let comLog = []; 
+    let comLog = [];
 
     let rawLog = Buffer.from(data, "hex").toString("utf8").split("\n");
-    rawLog.forEach((el) => {
-      if (el.length > 0) {
-        comLog.unshift(JSON.parse(el.replace("\r", "")));
-      }
-    });
-    
-    res.send(comLog)
+    if (rawLog) {
+      rawLog.forEach((el) => {
+        if (el.length > 0) {
+          comLog.unshift(JSON.parse(el.replace("\r", "")));
+        }
+      });
+    }
+    res.send(comLog);
   });
 }
 

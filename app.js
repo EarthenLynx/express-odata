@@ -64,7 +64,7 @@ app.use(function (err, req, res, next) {
     level: "error",
     time: new Date(),
     message:
-      "An unexpected error has occured. It is likely related to a misconfiguration in the entrypoint - file. ",
+      "A generic error hass occured: " + err.message,
   });
 });
 
