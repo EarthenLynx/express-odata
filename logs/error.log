@@ -1,20 +1,2 @@
 {"level":"error","time":"2020-06-11T15:55:45.223Z","message":"An unexpected error has occured. It is likely related to a misconfiguration in the entrypoint - file. "}
-{"level":"error","time":"2020-06-15T07:40:51.422Z","message":"A generic error hass occured: Not Found"}
-{"level":"error","time":"2020-06-15T11:23:18.029Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:23:56.510Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:24:26.058Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:24:52.396Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:26:17.246Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:27:36.744Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:27:57.701Z","message":"A generic error hass occured: Unexpected token i in JSON at position 0"}
-{"level":"error","time":"2020-06-15T11:47:11.927Z","message":"A generic error hass occured: routes_db.get(...).push(...).write(...).then is not a function"}
-{"level":"error","time":"2020-06-15T11:48:21.498Z","message":"A generic error hass occured: routes_db.get(...).push(...).write(...).then is not a function"}
-{"level":"error","time":"2020-06-15T11:48:44.841Z","message":"A generic error hass occured: routes_db.get(...).push(...).write(...).then is not a function"}
-{"level":"error","time":"2020-06-15T12:28:14.258Z","message":"A generic error hass occured: Cannot read property 'then' of undefined"}
-{"level":"error","time":"2020-06-15T12:30:01.984Z","message":"A generic error hass occured: routes_db.write is not a function"}
-{"level":"error","time":"2020-06-15T12:31:04.581Z","message":"A generic error hass occured: routes_db.get is not a function"}
-{"level":"error","time":"2020-06-15T12:32:33.735Z","message":"A generic error hass occured: routes is not defined"}
-{"level":"error","time":"2020-06-15T12:32:41.932Z","message":"A generic error hass occured: routes_db.get(...).read is not a function"}
-{"level":"error","time":"2020-06-15T12:34:48.137Z","message":"A generic error hass occured: routes_db.get is not a function"}
-{"level":"error","time":"2020-06-15T12:36:15.930Z","message":"A generic error hass occured: routes_db.write is not a function"}
-{"level":"error","time":"2020-06-15T12:37:00.609Z","message":"A generic error hass occured: routes_db.write is not a function"}
+
