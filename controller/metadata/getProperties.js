@@ -4,12 +4,13 @@ const logger = require("../../middleware/logger");
 const convert = require("xml-js");
 
 /*
- * @desc        Get OData stream entities and save them locally as json.
- *              Data will be saved in /cache folder and can be queried
- *              for DELETE and PUT requests.
- *              This service will automatically fetch the URL of the
- *              Metadata and execute another request.
+ * @desc        Get OData stream entities and return them to the client.
+ *              Data will be saved in /cache folder and can be queried for DELETE and PUT requests.
+ *              This service will automatically fetch the URL of the Metadata and execute another request.
+ *              It will also automatically convert its properties to JSON
+ * 
  * @route       GET /ometa?url=[ODATA_URL]
+ * 
  * @response    200: [{name:String, props:Object}]
  *              err: {status, msg}
  */

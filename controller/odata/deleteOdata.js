@@ -22,7 +22,7 @@ const handleException = require("../helpers/handleOdataException");
  * @issues
  * //FIXME:    Newly created entities ( from the server ) cannot be deleted and throw a 400 bad request error
  *             ( only for the first API key, for the 2nd this did not occur ), could be an issue with integrity
- * //TODO: Change the status of the helper function before moving to a production environment
+ * //TODO:     Change the status of the helper function before moving to a production environment
  */
 const DELETE_ODATA = (req, res, next) => {
   // Get the Odata Path and the key from the URL
