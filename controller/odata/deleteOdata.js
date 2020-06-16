@@ -8,7 +8,8 @@ const handleException = require("../helpers/handleOdataException");
  * @desc        Delete a OData resource based on a given oKey in the URL.
  *              Depending on the service targetted, the response body
  *              might be empty and therefor return a status code of
- *              204. Therefor
+ *              204. Therefor, make sure to have the route tested and the status 
+ *              passed to the helper function adjusted
  *
  * @route       GET /odata?url=[ODATA_URL]&oKey=[OKEY]
  *
@@ -21,9 +22,10 @@ const handleException = require("../helpers/handleOdataException");
  * @issues
  * //FIXME:    Newly created entities ( from the server ) cannot be deleted and throw a 400 bad request error
  *             ( only for the first API key, for the 2nd this did not occur ), could be an issue with integrity
+ * //TODO: Change the status of the helper function before moving to a production environment
  */
 const DELETE_ODATA = (req, res, next) => {
-  // Get the Odata Path from the URL
+  // Get the Odata Path and the key from the URL
   let oUrl = req.query.url;
   let oKey = req.query.key;
 

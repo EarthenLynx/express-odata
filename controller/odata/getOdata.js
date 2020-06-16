@@ -5,57 +5,29 @@ const handleResponse = require("../helpers/handleOdataResponse");
 const handleException = require("../helpers/handleOdataException");
 
 /*
- * @desc        Get OData stream headers, config & data based on URL query
- *              URL param 'section' is optional, used to get single params from stream
- *              If types are omitted or invalid, just the data values will be sent
- * 
- * @route       GET /odata?url=[ODATA_URL]&section=[SECTION]
- * 
- * @requires    1. REQUIRED | url=[ODATA_URL]:  | The URL of the OData service.
- *              2. OPTIONAL | section=[SECTION] | The specific part of OData information to be returned.
- * 
+ * @desc        Get OData stream from the specified URL
+ *
+ * @route       GET /odata?url=[ODATA_URL]
+ *
+ * @requires    REQUIRED |    url=[ODATA_URL]:    | The URL of the OData service.
+ *
  * @response    200: {status, headers, config, data}
  *              err: {status, msg}
  */
+
 const GET_ODATA = (req, res, next) => {
   // Get the Odata Path from the URL
   let oUrl = req.query.url;
-  let section = req.query.section;
 
-  // Check if section has been specified and return only that property
-  if (section) {
-    axios
-      .get(oUrl, axios_config)
-      .then((oResponse) => {
-        let jsonData = "";
-        switch (section) {
-          case "headers":
-            jsonData = oResponse.headers;
-            break;
-          case "config":
-            jsonData = oResponse.config;
-            break;
-          default:
-            jsonData = oResponse.data;
-            break;
-        }
-        res.send(jsonData);
-      })
-      .catch((err) => {
-        res.send({ status: "Error", msg: err.message });
-      });
-
-    // If no section was specified, return all four properties
-  } else {
-    axios
-      .get(oUrl, axios_config)
-      .then((oResponse) => {
-        handleResponse(res, oResponse, 200);
-      })
-      .catch((err) => {
-        handleException(res, err);
-      });
-  }
+  // Send the get request and pass the response to the helper functions
+  axios
+    .get(oUrl, axios_config)
+    .then((oResponse) => {
+      handleResponse(res, oResponse, 200);
+    })
+    .catch((err) => {
+      handleException(res, err);
+    });
 };
 
 module.exports = GET_ODATA;
