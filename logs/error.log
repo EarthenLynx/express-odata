@@ -1,2 +1,19 @@
 {"level":"error","time":"2020-06-11T15:55:45.223Z","message":"An unexpected error has occured. It is likely related to a misconfiguration in the entrypoint - file. "}
-
+{"level":"error","time":"2020-06-15T15:09:56.910Z","message":"A generic error hass occured: Unexpected token o in JSON at position 1"}
+{"level":"error","time":"2020-06-15T15:10:21.614Z","message":"A generic error hass occured: Unexpected token o in JSON at position 1"}
+{"level":"error","time":"2020-06-16T06:38:18.476Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:38:55.187Z","message":"A generic error hass occured: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle"}
+{"level":"error","time":"2020-06-16T06:39:24.128Z","message":"A generic error hass occured: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle"}
+{"level":"error","time":"2020-06-16T06:43:15.885Z","message":"A generic error hass occured: logger is not defined"}
+{"level":"error","time":"2020-06-16T06:52:20.469Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:52:43.036Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:55:22.214Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:56:02.608Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:56:37.488Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:56:55.148Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:57:13.742Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:57:23.723Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:57:45.789Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:58:15.390Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T06:58:39.683Z","message":"A generic error hass occured: getErrLogs is not a function"}
+{"level":"error","time":"2020-06-16T06:58:39.768Z","message":"A generic error hass occured: Not Found"}

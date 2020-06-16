@@ -2,6 +2,7 @@ const logger = require("../../../middleware/logger");
 
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
+const { reduce } = require("lodash");
 
 const adapter = new FileSync("routes_db.json");
 const routes_db = low(adapter);
@@ -15,17 +16,24 @@ const routes_db = low(adapter);
  *              2. (res),        the response to send back to the client, depending on whether the
  *                               saving operation was successful
  *
- * @response    none ( yet ) //TODO: Add a response body here
+ * @response    none ( yet )
  */
 
-const GET_ROUTES = (req, res, next) => {
-  const payload = routes_db.get("routes").value();
+const CREATE_ROUTE = (req, res, next) => {
+  // Create the DB file if it doesn't exist yet
+  console.log("This creates a route");
+
+  routes_db.defaults({ routes: [] }).write();
+
+  routes_db.get("routes").push(req.body).write();
+
+  res.status(200).send(JSON.stringify({status : "Success", msg: "Route has been successfully saved top the DB"}))
+
   logger.info({
     level: "info",
-    time: new Date(),
-    message: payload.length + " Routes have been successfully sent to the client",
+    time: new Date(), 
+    message: "Route with ID " + req.body.id + " has been saved to db", 
   });
-  res.send(payload);
 };
 
-module.exports = GET_ROUTES;
+module.exports = CREATE_ROUTE;
