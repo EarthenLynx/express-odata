@@ -287,3 +287,51 @@
 {"level":"info","time":"2020-06-16T09:33:44.080Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-16T09:37:12.377Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-16T09:37:57.022Z","message":"0 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T09:42:34.182Z","message":"0 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:14:22.105Z","message":"0 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:19:12.563Z","message":"0 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:23:39.268Z","message":"Route with ID a8887287-364f-f5e9-854b-7f7610e0f0aa has been saved to db"}
+{"level":"info","time":"2020-06-16T10:23:41.552Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:25:24.170Z","message":"Route with ID 8a1fa5c3-2600-84bf-990a-17c73d5b0cea has been saved to db"}
+{"level":"info","time":"2020-06-16T10:25:25.025Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:25:27.515Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:25:28.972Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:25:30.277Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:25:41.262Z","message":"Route with ID a8887287-364f-f5e9-854b-7f7610e0f0aa has been updated"}
+{"level":"info","time":"2020-06-16T10:25:42.257Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:25:43.251Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:26:36.432Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:26:38.436Z","message":"Route with ID a8887287-364f-f5e9-854b-7f7610e0f0aa has been removed"}
+{"level":"info","time":"2020-06-16T10:26:39.333Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:26:40.073Z","message":"1 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T10:28:01.987Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:28:11.930Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:28:25.384Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:29:39.321Z","message":"Route with ID 28be4621-ac9c-51e3-30b5-dc38f953ba38 has been saved to db"}
+{"level":"info","time":"2020-06-16T10:29:40.107Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:57:15.887Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T10:58:42.006Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T11:00:09.404Z","message":"Data successfully returned - 200"}
+{"level":"info","time":"2020-06-16T11:00:29.784Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:01:13.276Z","message":"Route with ID fafabf52-e1d0-80d3-41fc-620fc3e2f638 has been saved to db"}
+{"level":"info","time":"2020-06-16T11:01:14.432Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T11:01:23.241Z","message":"3 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:03:33.611Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T11:05:56.771Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T11:06:08.623Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:06:59.355Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T11:15:08.918Z","message":"Data successfully returned - 200"}
+{"level":"info","time":"2020-06-16T11:15:17.812Z","message":"Data successfully returned - 200"}
+{"level":"error","time":"2020-06-16T11:15:32.548Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T11:15:32.551Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T11:15:39.763Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T11:15:39.767Z","message":"A generic error hass occured: Not Found"}
+{"level":"info","time":"2020-06-16T11:32:01.026Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"error","time":"2020-06-16T11:34:17.844Z","message":"Error while getting identifiers: Cannot read property 'replace' of null"}
+{"level":"info","time":"2020-06-16T11:35:42.982Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:40:12.733Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:40:15.414Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:40:19.355Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:42:35.237Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:42:39.328Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T11:42:47.795Z","message":"Data successfully returned - 200"}

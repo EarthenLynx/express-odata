@@ -1,3 +1,40 @@
 {
-  "routes": []
+  "routes": [
+    {
+      "id": "8a1fa5c3-2600-84bf-990a-17c73d5b0cea",
+      "name": "OData Tripin Service Me",
+      "url": "https://services.odata.org/V4/TripPinServiceRW/Me",
+      "type": "json",
+      "oDataType": "Microsoft.OData.SampleService.Models.TripPin.Me",
+      "typeOptions[0][text]": "JSON",
+      "typeOptions[0][value]": "json",
+      "typeOptions[0][icon]": "sap-icon://syntax",
+      "typeOptions[1][text]": "XML",
+      "typeOptions[1][value]": "xml",
+      "typeOptions[1][icon]": "sap-icon://source-code",
+      "desc": "This is a route",
+      "sap": "true",
+      "guest": "false",
+      "active": "false",
+      "value": "{\"@odata.context\":\"http://services.odata.org/V4/(S(xrinbj0uje22u54gz23elaor))/TripPinServiceRW/$metadata#Me\",\"@odata.id\":\"http://services.odata.org/V4/(S(xrinbj0uje22u54gz23elaor))/TripPinServiceRW/Me\",\"@odata.etag\":\"W/\"08D811DF88A6477C\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(xrinbj0uje22u54gz23elaor))/TripPinServiceRW/Me\",\"UserName\":\"aprilcline\",\"FirstName\":\"April\",\"LastName\":\"Cline\",\"Emails\":[\"April@example.com\",\"April@contoso.com\"],\"AddressInfo\":[{\"Address\":\"P.O. Box 555\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Lander\",\"Region\":\"WY\"}}],\"Gender\":\"Female\",\"Concurrency\":637278999040903000}"
+    },
+    {
+      "id": "28be4621-ac9c-51e3-30b5-dc38f953ba38",
+      "name": "OData Tripin Service Me",
+      "url": "https://services.odata.org/V4/TripPinServiceRW/People",
+      "type": "json",
+      "oDataType": "Microsoft.OData.SampleService.Models.TripPin.People",
+      "typeOptions[0][text]": "JSON",
+      "typeOptions[0][value]": "json",
+      "typeOptions[0][icon]": "sap-icon://syntax",
+      "typeOptions[1][text]": "XML",
+      "typeOptions[1][value]": "xml",
+      "typeOptions[1][icon]": "sap-icon://source-code",
+      "desc": "This is a route",
+      "sap": "true",
+      "guest": "false",
+      "active": "false",
+      "value": "{\"@odata.context\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/$metadata#People\",\"@odata.nextLink\":\"https://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People?%24skiptoken=8\",\"value\":[{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('russellwhyte')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('russellwhyte')\",\"UserName\":\"russellwhyte\",\"FirstName\":\"Russell\",\"LastName\":\"Whyte\",\"Emails\":[\"Russell@example.com\",\"Russell@contoso.com\"],\"AddressInfo\":[{\"Address\":\"187 Suffolk Ln.\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Boise\",\"Region\":\"ID\"}}],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('scottketchum')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('scottketchum')\",\"UserName\":\"scottketchum\",\"FirstName\":\"Scott\",\"LastName\":\"Ketchum\",\"Emails\":[\"Scott@example.com\"],\"AddressInfo\":[{\"Address\":\"2817 Milton Dr.\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Albuquerque\",\"Region\":\"NM\"}}],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('ronaldmundy')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('ronaldmundy')\",\"UserName\":\"ronaldmundy\",\"FirstName\":\"Ronald\",\"LastName\":\"Mundy\",\"Emails\":[\"Ronald@example.com\",\"Ronald@contoso.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('javieralfred')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('javieralfred')\",\"UserName\":\"javieralfred\",\"FirstName\":\"Javier\",\"LastName\":\"Alfred\",\"Emails\":[\"Javier@example.com\",\"Javier@contoso.com\"],\"AddressInfo\":[{\"Address\":\"89 Jefferson Way Suite 2\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Portland\",\"Region\":\"WA\"}}],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('willieashmore')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('willieashmore')\",\"UserName\":\"willieashmore\",\"FirstName\":\"Willie\",\"LastName\":\"Ashmore\",\"Emails\":[\"Willie@example.com\",\"Willie@contoso.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('vincentcalabrese')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('vincentcalabrese')\",\"UserName\":\"vincentcalabrese\",\"FirstName\":\"Vincent\",\"LastName\":\"Calabrese\",\"Emails\":[\"Vincent@example.com\",\"Vincent@contoso.com\"],\"AddressInfo\":[{\"Address\":\"55 Grizzly Peak Rd.\",\"City\":{\"CountryRegion\":\"United States\",\"Name\":\"Butte\",\"Region\":\"MT\"}}],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('clydeguess')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('clydeguess')\",\"UserName\":\"clydeguess\",\"FirstName\":\"Clyde\",\"LastName\":\"Guess\",\"Emails\":[\"Clyde@example.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637279001490505500},{\"@odata.id\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('keithpinckney')\",\"@odata.etag\":\"W/\"08D811E01AA83F24\"\",\"@odata.editLink\":\"http://services.odata.org/V4/(S(gjdk3x522w5aqjpq01mcprgx))/TripPinServiceRW/People('keithpinckney')\",\"UserName\":\"keithpinckney\",\"FirstName\":\"Keith\",\"LastName\":\"Pinckney\",\"Emails\":[\"Keith@example.com\",\"Keith@contoso.com\"],\"AddressInfo\":[],\"Gender\":\"Male\",\"Concurrency\":637279001490505500}]}"
+    }
+  ]
 }
