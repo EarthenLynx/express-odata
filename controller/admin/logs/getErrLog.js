@@ -16,7 +16,6 @@ function GET_ERR_LOG(req, res, next) {
         }
       });
     }
-    
     res.send(errLog)
   });
 }

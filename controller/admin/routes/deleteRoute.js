@@ -2,7 +2,6 @@ const logger = require("../../../middleware/logger");
 
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
-const { reduce } = require("lodash");
 
 const adapter = new FileSync("routes_db.json");
 const routes_db = low(adapter);
@@ -19,26 +18,24 @@ const routes_db = low(adapter);
  * @response    none ( yet )
  */
 
-const UPDATE_ROUTE = (req, res, next) => {
+const DELETE_ROUTE = (req, res, next) => {
   // Create the DB file if it doesn't exist yet
-  console.log("This Controller updates a route");
-
-  routes_db.get("routes").find({ id: req.body.id }).assign(req.body).write();
+  routes_db.get("routes").remove({ id: req.body.id }).write();
 
   res
     .status(200)
     .send(
       JSON.stringify({
         status: "Success",
-        msg: "Route has been successfully updated",
+        msg: "Route has been successfully removed",
       })
     );
 
   logger.info({
     level: "info",
     time: new Date(),
-    message: "Route with ID " + req.body.id + " has been updated",
+    message: "Route with ID " + req.body.id + " has been removed",
   });
 };
 
-module.exports = UPDATE_ROUTE;
+module.exports = DELETE_ROUTE;
