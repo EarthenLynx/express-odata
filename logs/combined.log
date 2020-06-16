@@ -232,3 +232,47 @@
 {"level":"info","time":"2020-06-16T08:33:47.085Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-16T08:33:48.378Z","message":"5 Routes have been successfully sent to the client"}
 {"level":"info","time":"2020-06-16T08:34:20.476Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:35:03.391Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:38:31.342Z","message":"5 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:38:33.128Z","message":"Route with ID 265893e0-22fe-06d2-8569-db2ff3984435 has been removed"}
+{"level":"info","time":"2020-06-16T08:38:34.006Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:38:34.621Z","message":"4 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:38:36.326Z","message":"Route with ID 830b088b-9fb9-f25d-2e7c-b46795810567 has been removed"}
+{"level":"info","time":"2020-06-16T08:38:37.163Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:38:37.731Z","message":"3 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:38:38.468Z","message":"3 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:38:40.149Z","message":"Route with ID 1128845a-ff08-db6f-4c72-5f74e864d5eb has been removed"}
+{"level":"info","time":"2020-06-16T08:38:40.969Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:39:13.393Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:39:17.881Z","message":"Route with ID 1128845a-ff08-db6f-4c72-5f74e864d5eb has been removed"}
+{"level":"info","time":"2020-06-16T08:39:18.702Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:39:20.487Z","message":"2 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:39:22.441Z","message":"Route with ID ca72a7e1-c0e2-77d8-83cb-c9b9f9a1f912 has been removed"}
+{"level":"info","time":"2020-06-16T08:39:23.268Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:39:28.409Z","message":"1 Routes have been successfully sent to the client"}
+{"level":"info","time":"2020-06-16T08:39:30.231Z","message":"Route with ID 4c21b034-0d0f-8b14-29b1-c3076ceaef43 has been removed"}
+{"level":"info","time":"2020-06-16T08:39:31.045Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:39:31.153Z","message":"0 Routes have been successfully sent to the client"}
+{"level":"error","message":"Tue Jun 16 2020 10:43:14 GMT+0200 (GMT+02:00) - Error while getting identifiers: Request failed with status code 415"}
+{"level":"error","time":"2020-06-16T08:44:34.828Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T08:44:34.830Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","message":"Tue Jun 16 2020 10:44:44 GMT+0200 (GMT+02:00) - Error while getting identifiers: Request failed with status code 415"}
+{"level":"info","time":"2020-06-16T08:45:46.350Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:47:43.589Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:47:45.488Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:48:18.841Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:48:58.722Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:50:06.215Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:50:14.789Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:52:56.830Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:53:03.550Z","message":"Started server on port 3000"}
+{"level":"error","message":"Tue Jun 16 2020 10:53:26 GMT+0200 (GMT+02:00) - Error while getting identifiers: connect ETIMEDOUT 137.117.17.70:443"}
+{"level":"info","time":"2020-06-16T08:53:29.212Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:53:39.808Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:54:46.692Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:54:53.843Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:55:22.187Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:55:42.884Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:56:42.059Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T08:57:06.982Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:00:42.891Z","message":"Started server on port 3000"}

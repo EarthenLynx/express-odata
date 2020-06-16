@@ -9,7 +9,7 @@ const path = require("path");
  * @desc        Get OData stream entities and save them locally as json.
  *              Data will be saved in /cache folder and can be queried
  *              for DELETE and PUT requests.
- *              This service will automatically fetch the URL of the 
+ *              This service will automatically fetch the URL of the
  *              Metadata and execute another request.
  * @route       GET /ometa?url=[ODATA_URL]
  * @response    200: [{name:String, props:Object}]
@@ -17,23 +17,26 @@ const path = require("path");
  */
 
 const GET_PROPERTIES = (req, res, next) => {
+  console.log(req.query);
+
   let oUrl = req.query.url;
   axios
     .get(oUrl, axios_config)
     .then((response) => {
-      let mUrl = response.data["odata.metadata"];
+      // Assign mUrl based on which of the odata metas is available
+      let mUrl = "";
+      if (response.data["@odata.context"]) {
+        mUrl = response.data["@odata.context"];
+      } else if (response.data["odata.metadata"]) {
+        mUrl = response.data["odata.metadata"];
+      }
+
       // After meta url has been fetched, use it to return the metadata
       axios.get(mUrl).then((response) => {
         let mDataJson = JSON.parse(
           convert.xml2json(response.data, {
             compact: true,
           })
-        );
-        
-        // Resolve the name of the cache where data is to be stored
-        // TODO: Needs to receive a key to be retrieveable
-        let fPath = path.resolve(
-          __dirname + "../../../cache/oEntities.json"
         );
 
         /*
@@ -57,11 +60,7 @@ const GET_PROPERTIES = (req, res, next) => {
           });
         });
 
-        // Write the result to a json file and send the object back
-        fs.writeFile(fPath, JSON.stringify(oEntities), (err) => {
-          if (err) throw err;
-          res.send(JSON.stringify(oEntities));
-        });
+        res.send(JSON.stringify(oEntities));
       });
     })
     .catch((err) => {
@@ -69,7 +68,8 @@ const GET_PROPERTIES = (req, res, next) => {
       let date = new Date();
       logger.error({
         level: "error",
-        message: date + " - Error while getting identifiers: " + err.message,
+        time: date,
+        message: "Error while getting identifiers: " + err.message,
       });
     });
 };

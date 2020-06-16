@@ -18,3 +18,8 @@
 {"level":"error","time":"2020-06-16T06:58:39.683Z","message":"A generic error hass occured: getErrLogs is not a function"}
 {"level":"error","time":"2020-06-16T06:58:39.768Z","message":"A generic error hass occured: Not Found"}
 {"level":"error","time":"2020-06-16T08:31:06.908Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","message":"Tue Jun 16 2020 10:43:14 GMT+0200 (GMT+02:00) - Error while getting identifiers: Request failed with status code 415"}
+{"level":"error","time":"2020-06-16T08:44:34.828Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T08:44:34.830Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","message":"Tue Jun 16 2020 10:44:44 GMT+0200 (GMT+02:00) - Error while getting identifiers: Request failed with status code 415"}
+{"level":"error","message":"Tue Jun 16 2020 10:53:26 GMT+0200 (GMT+02:00) - Error while getting identifiers: connect ETIMEDOUT 137.117.17.70:443"}
