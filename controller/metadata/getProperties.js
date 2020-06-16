@@ -2,8 +2,6 @@ const axios = require("axios");
 const axios_config = require("../../config/axios.config.js");
 const logger = require("../../middleware/logger");
 const convert = require("xml-js");
-const fs = require("fs");
-const path = require("path");
 
 /*
  * @desc        Get OData stream entities and save them locally as json.
@@ -23,6 +21,7 @@ const GET_PROPERTIES = (req, res, next) => {
   axios
     .get(oUrl, axios_config)
     .then((response) => {
+
       // Assign mUrl based on which of the odata metas is available
       let mUrl = "";
       if (response.data["@odata.context"]) {
@@ -38,6 +37,7 @@ const GET_PROPERTIES = (req, res, next) => {
             compact: true,
           })
         );
+        res.send(mDataJson)
 
         /*
          * For each of the entity data
@@ -45,22 +45,24 @@ const GET_PROPERTIES = (req, res, next) => {
          * Save these in an array
          */
 
-        let oEntities = [];
-        let namespace =
-          mDataJson["edmx:Edmx"]["edmx:DataServices"]["Schema"]["_attributes"][
-            "Namespace"
-          ];
-        let entities =
-          mDataJson["edmx:Edmx"]["edmx:DataServices"]["Schema"]["EntityType"];
+        // let oEntities = [];
+        // let namespace =
+        //   mDataJson["edmx:Edmx"]["edmx:DataServices"]["Schema"]["_attributes"][
+        //     "Namespace"
+        //   ];
+        // let entities =
+        //   mDataJson["edmx:Edmx"]["edmx:DataServices"]["Schema"]["EntityType"];
 
-        entities.map((el) => {
-          oEntities.push({
-            name: namespace + "." + el["_attributes"]["Name"],
-            props: el["Property"],
-          });
-        });
+        // entities.map((el) => {
+        //   oEntities.push({
+        //     name: namespace + "." + el["_attributes"]["Name"],
+        //     props: el["Property"],
+        //   });
+        // });
+        // console.log(oEntities);
+        
 
-        res.send(JSON.stringify(oEntities));
+        // res.send((oEntities));
       });
     })
     .catch((err) => {

@@ -23,3 +23,5 @@
 {"level":"error","time":"2020-06-16T08:44:34.830Z","message":"A generic error hass occured: Not Found"}
 {"level":"error","message":"Tue Jun 16 2020 10:44:44 GMT+0200 (GMT+02:00) - Error while getting identifiers: Request failed with status code 415"}
 {"level":"error","message":"Tue Jun 16 2020 10:53:26 GMT+0200 (GMT+02:00) - Error while getting identifiers: connect ETIMEDOUT 137.117.17.70:443"}
+{"level":"error","time":"2020-06-16T09:09:52.268Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T09:09:52.271Z","message":"A generic error hass occured: Not Found"}

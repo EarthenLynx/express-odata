@@ -276,3 +276,14 @@
 {"level":"info","time":"2020-06-16T08:56:42.059Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-16T08:57:06.982Z","message":"Started server on port 3000"}
 {"level":"info","time":"2020-06-16T09:00:42.891Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:03:56.533Z","message":"Started server on port 3000"}
+{"level":"error","time":"2020-06-16T09:09:52.268Z","message":"A generic error hass occured: Not Found"}
+{"level":"error","time":"2020-06-16T09:09:52.271Z","message":"A generic error hass occured: Not Found"}
+{"level":"info","time":"2020-06-16T09:30:47.204Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:31:09.025Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:31:41.422Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:32:43.496Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:33:04.832Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:33:44.080Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:37:12.377Z","message":"Started server on port 3000"}
+{"level":"info","time":"2020-06-16T09:37:57.022Z","message":"0 Routes have been successfully sent to the client"}
