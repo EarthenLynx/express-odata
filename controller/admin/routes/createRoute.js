@@ -20,19 +20,17 @@ const routes_db = low(adapter);
 
 const CREATE_ROUTE = (req, res, next) => {
   // Create the DB file if it doesn't exist yet
-  console.log(req);
-
   routes_db.defaults({ routes: [] }).write();
 
   routes_db.get("routes").push(req.body).write();
-
-  res.status(200).send(JSON.stringify({status : "Success", msg: "Route has been successfully saved top the DB"})); 
 
   logger.info({
     level: "info",
     time: new Date(), 
     message: "Route with ID " + req.body.id + " has been saved to db", 
   });
+
+  res.status(200).send(JSON.stringify({status : "Success", msg: "Route has been successfully saved to the DB"})); 
 };
 
 module.exports = CREATE_ROUTE;
